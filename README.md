@@ -1,71 +1,93 @@
-# Markown-memento
-Voici un petit fichier memento pour vous indiquer les principales syntaxes que vous pouvez utiliser en markdown.
-Pour voir les détails de la syntaxe, cliquez que l'icone d'édition de ce fichier.
+# Markdown - Memento
 
-----------------
+Voici un fichier mémo pour les principales syntaxes Markdown.
+Pour voir le code source, cliquez sur l'icône d'édition de ce fichier.
 
-####Mettre un mot en italique
+---
 
-Voici un mot *en italique* 
+## Mettre un mot en italique
 
-Votre mot se trouve entre astérisques `*mon-mot*`
+Voici un mot *en italique*
 
------------------
+Entourez votre mot d'astérisques ou d'underscores :
 
-####Mettre un mot en gras
+`*mon-mot*` ou `_mon-mot_`
 
-Voici un mot __en gras__ ! 
+---
 
-Votre mot se trouve entre deux `__underscores__` 
+## Mettre un mot en gras
 
------------------
+Voici un mot **en gras** !
 
-####Les titres
+Entourez votre mot de deux astérisques ou deux underscores :
 
-# Titre de niveau 1 
-Pour un titre de niveau 1 (h1), il faut placer un `#titre` devant votre titre.
+`**mon-mot**` ou `__mon-mot__`
 
+---
+
+## Gras et italique combinés
+
+Voici un mot ***en gras et italique*** !
+
+`***mon-mot***`
+
+---
+
+## Texte barré
+
+Voici un mot ~~barré~~ !
+
+`~~mon-mot~~`
+
+---
+
+## Les titres
+
+# Titre de niveau 1
 ## Titre de niveau 2
-Pour un titre de niveau 2 (h2), il faut cette fois deux `##titre` devant votre titre
+### Titre de niveau 3
+#### Titre de niveau 4
 
-Et ainsi de suite jusqu'au h6.
+Pour créer un titre, placez un ou plusieurs `#` suivi d'un **espace** devant votre texte :
 
------------------
+`# Titre de niveau 1`
 
-####Aller à la ligne en fin de phrase
+`## Titre de niveau 2`
+
+Et ainsi de suite jusqu'au niveau 6.
+
+---
+
+## Aller à la ligne en fin de phrase
 
 Pour faire un  
 changement de ligne
 
-Votre ligne doit se terminer par 2 `espaces` pour faire ce qu'on appelle un __retour-chariot__, c'est à dire aller à la ligne.
+Votre ligne doit se terminer par 2 `espaces` pour faire un retour à la ligne.
 
------------------
+---
 
-####Faire une liste à puces
+## Faire une liste à puces
 
 * Une puce
 * Une autre puce
 * Et encore une autre puce !
 
-Il faut simplement placer un astérisque devant les éléments de votre liste.
-
-`* Une puce`
-
-`* Une autre puce`
-
+`* Une puce`  
+`* Une autre puce`  
 `* Et encore une autre puce !`
 
-######Pour faire une liste ordonnée : 
+#### Liste ordonnée :
 
 1. Et de un
 2. Et de deux
 3. Et de trois
 
-`1. Et de un`
-`2. Et de deux`
+`1. Et de un`  
+`2. Et de deux`  
 `3. Et de trois`
 
-######Pour imbriquer une liste dans une autre :
+#### Liste imbriquée :
 
 * Une puce
 * Une autre puce
@@ -73,61 +95,34 @@ Il faut simplement placer un astérisque devant les éléments de votre liste.
     * Une autre sous-puce
 * Et encore une autre puce !
 
-`* Une puce`
+---
 
-`* Une autre puce`
+## Liste de tâches
 
-    `* Une sous-puce`
-    
-    `* Une autre sous-puce`
-    
-`* Et encore une autre puce !`
+- [x] Tâche terminée
+- [ ] Tâche à faire
+- [ ] Une autre tâche
 
-1. Une puce
-2. Une autre puce
-    1. Une sous-puce
-    2. Une autre sous-puce
-3. Et encore une autre puce !
+`- [x] Tâche terminée`  
+`- [ ] Tâche à faire`
 
-`1. Une puce`
+---
 
-`2. Une autre puce`
-
-    `1. Une sous-puce`
-    
-    `2. Une autre sous-puce`
-    
-`3. Et encore une autre puce !`
-
------------------
-
-####Faire une citation
+## Faire une citation
 
 > Ceci est un texte cité. Vous pouvez répondre
 > à cette citation en écrivant un paragraphe
 > normal juste en-dessous !
 
-Il vous suffit d'ajouter un `>` devant votre citation.
+Ajoutez un `>` devant votre citation :
 
-`> Ceci est un texte cité. Vous pouvez répondre à cette citation en écrivant un paragraphe normal juste en-dessous !`
+`> Ceci est un texte cité.`
 
------------------
+---
 
-####Ecrire du code
+## Écrire du code
 
-#####Un code entier
-
-Voici un code en C :
-
-    int main()
-    {
-        printf("Hello world!\n");
-        return 0;
-    }
-    
-Il vous suffit d'écrire votre phrase de présentation comme n'importe quelle phrase et d'écrire votre code à la ligne.
-    
-`Voici un code en C :`
+#### Bloc de code simple (indentation de 4 espaces)
 
     int main()
     {
@@ -135,44 +130,88 @@ Il vous suffit d'écrire votre phrase de présentation comme n'importe quelle ph
         return 0;
     }
 
-#####Juste un morceau de code
+#### Bloc de code avec coloration syntaxique
 
-`<h1>Titre</h1>`
+```javascript
+const message = "Hello world!";
+console.log(message);
+```
 
-Il vous suffit d'entourer votre morceau de code avec deux accents graves.
-Pour faire un accent grave, il vous suffit de faire `AltGr` + `7` sur votre clavier.
+````
+```javascript
+const message = "Hello world!";
+console.log(message);
+```
+````
 
------------------
+Remplacez `javascript` par le langage souhaité : `python`, `html`, `css`, `bash`, etc.
 
-####Mettre un lien
+#### Morceau de code en ligne
 
-Rendez-vous sur [Simplonline](http://www.simplonline.com) !
+Voici une balise `<h1>Titre</h1>` dans une phrase.
 
-Il vous faut le mot sur lequel vous souhaitez faire votre lien entre crochets [ ], puis votre lien entre parenthèses ( ).
+Entourez votre code de deux accents graves `` ` `` (AltGr + 7).
 
-`Rendez-vous sur [Simplonline](http://www.simplonline.com) !`
+---
 
------------------
+## Mettre un lien
 
-####Intégrer une image
+Rendez-vous sur [GitHub](https://github.com) !
 
-La syntaxe est la même que pour un lien, il suffit juste d'ajouter un point d'exclamation devant les crochets. 
+`[texte du lien](https://url.com)`
 
-Ce que vous mettez entre crochet est le texte alternatif de l'image, que nous vous conseillons fortement d'intégrer à chaque fois que vous mettez une image.
+#### Lien avec titre au survol :
 
-Important : ça ne marche qu'avec des url d'images prises sur le web.
+[GitHub](https://github.com "Ouvrir GitHub")
 
-`![Simplon.co](http://simplon.co/wp-content/uploads/2015/04/if-coder-keep-coding-else-learn-with-simplon-2-600x675.png)`
+`[texte du lien](https://url.com "Titre au survol")`
 
-![Simplon.co](http://simplon.co/wp-content/uploads/2015/04/if-coder-keep-coding-else-learn-with-simplon-2-600x675.png)
+#### Lien automatique :
 
------------------
+<https://github.com>
 
-####Barre de séparation
+`<https://url.com>`
 
-Pour faire une barre de séparation il vous suffit d'écrire plusieurs `-` d'affilé. Plus vous en mettrez plus le trait sera épais.
+---
 
-`-----------------`
+## Intégrer une image
 
-----------------
+![Logo GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
 
+`![texte alternatif](https://url-de-l-image.com)`
+
+---
+
+## Tableau
+
+| Nom       | Prénom  | Âge |
+|-----------|:-------:|----:|
+| Dupont    | Alice   |  30 |
+| Martin    | Bob     |  25 |
+
+```
+| Nom       | Prénom  | Âge |
+|-----------|:-------:|----:|
+| Dupont    | Alice   |  30 |
+| Martin    | Bob     |  25 |
+```
+
+- `:-------:` = centré
+- `-------:` = aligné à droite
+- `-------` = aligné à gauche (défaut)
+
+---
+
+## Échapper un caractère spécial
+
+Pour afficher un caractère Markdown littéralement (comme `*` ou `#`), précédez-le d'un backslash `\` :
+
+`\*ce texte ne sera pas en italique\*`
+
+---
+
+## Barre de séparation
+
+Pour créer une ligne de séparation, écrivez au moins trois tirets, astérisques ou underscores seuls sur une ligne :
+
+`---`  ou  `***`  ou  `___`
